@@ -1,0 +1,1648 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пиццерия</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+  <header class="page_head header">
+    <div class="header__content">
+      <a class="header__logo">
+        <img width="81px" height="81px" src="pictures/Лого.jpg">
+      </a>
+      <div class="header__phone">
+        <p>Звоните по телефону</p>
+        <p>789-446-85</p>
+      </div>
+      <div class="header__town">
+        <p>Открыты в Минске</p>
+      </div>
+      <div class="header__burger-menu">
+        <div class="burger-menu">
+          <div class="hamburger">
+            <label for="burger">
+              <div fill="black" class="icon">
+                <svg width="28" height="26" viewBox="0 0 28 26" xmlns="http://www.w3.org/2000/svg" onclick="toggleMenu()">
+                  <path d="M1 5.25H27C27.5 5.25 28 4.8125 28 4.25V1.75C28 1.25 27.5 0.75 27 0.75H1C0.4375 0.75 0 1.25 0 1.75V4.25C0 4.8125 0.4375 5.25 1 5.25ZM1 15.25H27C27.5 15.25 28 14.8125 28 14.25V11.75C28 11.25 27.5 10.75 27 10.75H1C0.4375 10.75 0 11.25 0 11.75V14.25C0 14.8125 0.4375 15.25 1 15.25ZM1 25.25H27C27.5 25.25 28 24.8125 28 24.25V21.75C28 21.25 27.5 20.75 27 20.75H1C0.4375 20.75 0 21.25 0 21.75V24.25C0 24.8125 0.4375 25.25 1 25.25Z"></path>
+                </svg>
+                <div id="menu">
+                  <div class="title1">
+                    <h2>PIZZA</h2>
+                    <div class="side-menu">
+                      <ul>
+                        <li>
+                          <a href="Index.html" style="text-decoration: none; color: inherit;">Меню</a>
+                        </li>
+                        <li>
+                          <a href="Program.html" style="text-decoration: none; color: inherit;">Программа лояльности</a>
+                        </li>
+                        <li>
+                          <a href="О нас.html" style="text-decoration: none; color: inherit;">О Нас</a>
+                        </li>
+
+                      </ul>
+                    </div>
+                  </div>
+              </div>
+              </div>
+            </div>
+          </label>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="header-navigation__wrapper header-navigation__" id="header-navigation">
+    <div class="header-navigation">
+      <div class="header-navigation__content">
+        <nav class="header-navigation__nav-block">
+          <ul class="header-navigation__anchor-link-list">
+            <li class="header-navigation__nav-link">
+              <a data-nav-link-page="true" href="#Pizza">Пиццы</a>
+            </li>
+            <li class="header-navigation__nav-link">
+              <a data-nav-link-page="true" href="#Desserts">Десерты</a>
+            </li>
+            <li class="header-navigation__nav-link">
+              <a data-nav-link-page="true" href="#Drink">Напитки</a>
+            </li>
+            <li class="header-navigation__nav-link">
+              <a data-nav-link-page="true" href="#Sauces">Соусы</a>
+            </li>
+            <li class="header-navigation__nav-link">
+              <span class="header-navigation__delimiter"></span>
+            </li>
+            <li class="header-navigation__nav-link">
+              <a data-nav-link-page="false" href="/ru/minsk/club/">Программа лояльности</a>
+            </li>            
+          </ul>
+        </nav>
+        <div class="header-navigation__cart-button"></div>
+      </div>
+    </div>
+  </div>
+  <section class="group-item" >
+      <div class="group-item__title-block">
+        <h1 id="Pizza">Пицца</h1>
+      </div>
+      <div class="group-item__grid">
+          <article class="group-item__item">
+            <div class="group-item__item__body">
+              <div class="product-column">
+                <div class="group-item__image-container">
+                  <div class="">
+                    <img loading="lazy" alt="Баварская" class="medium" src="pictures/Баварская.jpg">
+                  </div>
+                </div>
+                <div class="col-b">
+                  <div class="wrapper-title">
+                    <h2 class="group-item__name-product">Баварская</h2>
+                  </div>
+                  <div class="group-item__description">Баварские колбаски, маринованные огурчики, красный лук, томаты, горчичный соус, моцарелла, фирменный томатный соус</div>
+              </div>
+              </div>
+            </div>
+            <div class="group-item__settings">
+              <div class="control-buttons group-item__sizes">
+                <div class="control-buttons__wrapper-title">
+                  <div class="control-buttons__title">Размер</div>
+                  <div class="control-buttons__weight" id="weight-Баварская">440г</div>
+                </div>
+                <div class="control-buttons__row">
+                  <div data-size="M" data-weight="440г" data-price="20.99$"  id="Баварская" class="base-tab-button selected">
+                    <button class="base-tab-button selected" onclick="changeValues(this)">M
+                    </button>
+                  </div>
+                  <div data-size="L" data-weight="630г" data-price="29.99$"  id="Баварская" class="base-tab-button"> 
+                    <button class="base-tab-button" onclick="changeValues(this)">L
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bottom-blocks">
+              <div class="group-item__bottom-block bottom">
+                <div class="group-item__price-contaier">
+                  <div class="group-item__price-text" id="price-Баварская">20.99$</div>
+                </div>
+                <div class="add-product-block">
+                  <button class="red-button" onclick="addToCart('Баварская', 20.99)">
+                    <div>В корзину</div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="group-item__item">
+            <div class="group-item__item__body">
+              <div class="product-column">
+                <div class="group-item__image-container">
+                  <div class="">
+                    <img loading="lazy" alt="Баварская" class="medium" src="pictures/Пицца Жульен.jpg">
+                  </div>
+                </div>
+                <div class="col-b">
+                  <div class="wrapper-title">
+                    <h2 class="group-item__name-product">Пицца Жульен</h2>
+                  </div>
+                  <div class="group-item__description">Цыпленок, шампиньоны, ароматный грибной соус, красный лук, сухой чеснок, моцарелла, смесь сыров чеддер и пармезан, фирменный соус альфредо</div>
+              </div>
+              </div>
+            </div>
+            <div class="group-item__settings">
+              <div class="control-buttons group-item__sizes">
+                <div class="control-buttons__wrapper-title">
+                  <div class="control-buttons__title">Размер</div>
+                  <div class="control-buttons__weight" id="weight-Жульен">430г</div>
+                </div>
+                <div class="control-buttons__row">
+                  <div data-size="M" data-weight="430г" data-price="20.99$" id="Жульен" class="base-tab-button selected">
+                    <button class="base-tab-button selected" onclick="changeValues(this)">M
+                    </button>
+                  </div>
+                  <div data-size="L" data-weight="645г" data-price="29.99$" id="Жульен" class="base-tab-button"> 
+                    <button class="base-tab-button" onclick="changeValues(this)">L
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bottom-blocks">
+              <div class="group-item__bottom-block bottom">
+                <div class="group-item__price-contaier">
+                  <div class="group-item__price-text" id="price-Жульен">29.99$</div>
+                </div>
+                <div class="add-product-block">
+                  <button class="red-button" onclick="addToCart('Пицца Жульен', 29.99)">
+                    <div>В корзину</div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="group-item__item">
+            <div class="group-item__item__body">
+              <div class="product-column">
+                <div class="group-item__image-container">
+                  <div class="">
+                    <img loading="lazy" alt="Бургер-пицца" class="medium" src="pictures/Бургер-пицца.jpg">
+                  </div>
+                </div>
+                <div class="col-b">
+                  <div class="wrapper-title">
+                    <h2 class="group-item__name-product">Бургер-пицца</h2>
+                  </div>
+                  <div class="group-item__description">Сыр моцарелла, ветчина, лук красный, томаты, маринованные огурчики, соус Бургер, сухой чеснок, томатный соус</div>
+              </div>
+              </div>
+            </div>
+            <div class="group-item__settings">
+              <div class="control-buttons group-item__sizes">
+                <div class="control-buttons__wrapper-title">
+                  <div class="control-buttons__title">Размер</div>
+                  <div class="control-buttons__weight" id="weight-Бургер-пицца">420г</div>
+                </div>
+                <div class="control-buttons__row">
+                  <div data-size="M" data-weight="420г" data-price="18.99$"  id="Бургер-пицца" class="base-tab-button selected">
+                    <button class="base-tab-button selected" onclick="changeValues(this)">M
+                    </button>
+                  </div>
+                  <div data-size="L" data-weight="630г" data-price="26.99$"  id="Бургер-пицца" class="base-tab-button"> 
+                    <button class="base-tab-button" onclick="changeValues(this)">L
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bottom-blocks">
+              <div class="group-item__bottom-block bottom">
+                <div class="group-item__price-contaier">
+                  <div class="group-item__price-text" id="price-Бургер-пицца">18.99$</div>
+                </div>
+                <div class="add-product-block">
+                  <button class="red-button" onclick="addToCart('Бургер-пицца', 18.99)">
+                    <div>В корзину</div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+      </div>
+      <div class="group-item__grid">
+          <article class="group-item__item">
+            <div class="group-item__item__body">
+              <div class="product-column">
+                <div class="group-item__image-container">
+                  <div class="">
+                    <img loading="lazy" alt="Ветчина и грибы" class="medium" src="pictures/Ветчина и грибы.jpg">
+                  </div>
+                </div>
+                <div class="col-b">
+                  <div class="wrapper-title">
+                    <h2 class="group-item__name-product">Ветчина и грибы</h2>
+                  </div>
+                  <div class="group-item__description">Ветчина, много моцареллы, шампиньоны, томатный соус</div>
+              </div>
+              </div>
+            </div>
+            <div class="group-item__settings">
+              <div class="control-buttons group-item__sizes">
+                <div class="control-buttons__wrapper-title">
+                  <div class="control-buttons__title">Размер</div>
+                  <div class="control-buttons__weight" id="weight-Ветчина и грибы">370г</div>
+                </div>
+                <div class="control-buttons__row">
+                  <div data-size="M" data-weight="370г" data-price="13.99$"  id="Ветчина и грибы" class="base-tab-button selected">
+                    <button class="base-tab-button selected" onclick="changeValues(this)">M
+                    </button>
+                  </div>
+                  <div data-size="L" data-weight="603г" data-price="23.99$"  id="Ветчина и грибы" class="base-tab-button"> 
+                    <button class="base-tab-button" onclick="changeValues(this)">L
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bottom-blocks">
+              <div class="group-item__bottom-block bottom">
+                <div class="group-item__price-contaier">
+                  <div class="group-item__price-text" id="price-Ветчина и грибы">13.99$</div>
+                </div>
+                <div class="add-product-block">
+                  <button class="red-button" onclick="addToCart('Ветчина и грибы', 13.99)">
+                    <div>В корзину</div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="group-item__item">
+            <div class="group-item__item__body">
+              <div class="product-column">
+                <div class="group-item__image-container">
+                  <div class="">
+                    <img loading="lazy" alt="Ветчина и сыр" class="medium" src="pictures/Ветчина и сыр.jpg">
+                  </div>
+                </div>
+                <div class="col-b">
+                  <div class="wrapper-title">
+                    <h2 class="group-item__name-product">Ветчина и сыр</h2>
+                  </div>
+                  <div class="group-item__description">Ветчина, моцарелла и соус альфредо — просто и со вкусом</div>
+              </div>
+              </div>
+            </div>
+            <div class="group-item__settings">
+              <div class="control-buttons group-item__sizes">
+                <div class="control-buttons__wrapper-title">
+                  <div class="control-buttons__title">Размер</div>
+                  <div class="control-buttons__weight" id="weight-Ветчина и сыр">321г</div>
+                </div>
+                <div class="control-buttons__row">
+                  <div data-size="M" data-weight="321г" data-price="12.99$" id="Ветчина и сыр" class="base-tab-button selected">
+                    <button class="base-tab-button selected" onclick="changeValues(this)">M
+                    </button>
+                  </div>
+                  <div data-size="L" data-weight="503г" data-price="20.99$" id="Ветчина и сыр" class="base-tab-button"> 
+                    <button class="base-tab-button" onclick="changeValues(this)">L
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bottom-blocks">
+              <div class="group-item__bottom-block bottom">
+                <div class="group-item__price-contaier">
+                  <div class="group-item__price-text" id="price-Жульен">29.99$</div>
+                </div>
+                <div class="add-product-block">
+                  <button class="red-button" onclick="addToCart('Ветчина и сыр', 12.99)">
+                    <div>В корзину</div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="group-item__item">
+            <div class="group-item__item__body">
+              <div class="product-column">
+                <div class="group-item__image-container">
+                  <div class="">
+                    <img loading="lazy" alt="Гавайская с альфредо" class="medium" src="pictures/Гавайская с альфредо.jpg">
+                  </div>
+                </div>
+                <div class="col-b">
+                  <div class="wrapper-title">
+                    <h2 class="group-item__name-product">Гавайская с альфредо</h2>
+                  </div>
+                  <div class="group-item__description">Двойная порция цыпленка, кусочки ананасов, моцарелла, соус альфредо</div>
+              </div>
+              </div>
+            </div>
+            <div class="group-item__settings">
+              <div class="control-buttons group-item__sizes">
+                <div class="control-buttons__wrapper-title">
+                  <div class="control-buttons__title">Размер</div>
+                  <div class="control-buttons__weight" id="weight-Гавайская с альфредо">435г</div>
+                </div>
+                <div class="control-buttons__row">
+                  <div data-size="M" data-weight="435г" data-price="18.99$"  id="Гавайская с альфредо" class="base-tab-button selected">
+                    <button class="base-tab-button selected" onclick="changeValues(this)">M
+                    </button>
+                  </div>
+                  <div data-size="L" data-weight="650г" data-price="26.99$"  id="Гавайская с альфредо" class="base-tab-button"> 
+                    <button class="base-tab-button" onclick="changeValues(this)">L
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bottom-blocks">
+              <div class="group-item__bottom-block bottom">
+                <div class="group-item__price-contaier">
+                  <div class="group-item__price-text" id="price-Гавайская с альфредо">18.99$</div>
+                </div>
+                <div class="add-product-block">
+                  <button class="red-button" onclick="addToCart('Гавайская с альфредо', 18.99)">
+                    <div>В корзину</div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+      </div>
+      <div class="group-item__grid">
+          <article class="group-item__item">
+            <div class="group-item__item__body">
+              <div class="product-column">
+                <div class="group-item__image-container">
+                  <div class="">
+                    <img loading="lazy" alt="Деревенская" class="medium" src="pictures/Деревенская.jpg">
+                  </div>
+                </div>
+                <div class="col-b">
+                  <div class="wrapper-title">
+                    <h2 class="group-item__name-product">Деревенская</h2>
+                  </div>
+                  <div class="group-item__description">Цыпленок, картофель из печи, маринованные огурчики, красный лук, сухой чеснок, фирменный томатный соус, моцарелла, соус ранч</div>
+              </div>
+              </div>
+            </div>
+            <div class="group-item__settings">
+              <div class="control-buttons group-item__sizes">
+                <div class="control-buttons__wrapper-title">
+                  <div class="control-buttons__title">Размер</div>
+                  <div class="control-buttons__weight" id="weight-Деревенская">535г</div>
+                </div>
+                <div class="control-buttons__row">
+                  <div data-size="M" data-weight="535г" data-price="18.99$"  id="Деревенская" class="base-tab-button selected">
+                    <button class="base-tab-button selected" onclick="changeValues(this)">M
+                    </button>
+                  </div>
+                  <div data-size="L" data-weight="820г" data-price="26.99$"  id="Деревенская" class="base-tab-button"> 
+                    <button class="base-tab-button" onclick="changeValues(this)">L
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bottom-blocks">
+              <div class="group-item__bottom-block bottom">
+                <div class="group-item__price-contaier">
+                  <div class="group-item__price-text" id="price-Деревенская">18.99$</div>
+                </div>
+                <div class="add-product-block">
+                  <button class="red-button" onclick="addToCart('Деревенская', 18.99)">
+                    <div>В корзину</div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="group-item__item">
+            <div class="group-item__item__body">
+              <div class="product-column">
+                <div class="group-item__image-container">
+                  <div class="">
+                    <img loading="lazy" alt="Баварская" class="medium" src="pictures/Домашняя.jpg">
+                  </div>
+                </div>
+                <div class="col-b">
+                  <div class="wrapper-title">
+                    <h2 class="group-item__name-product">Домашняя</h2>
+                  </div>
+                  <div class="group-item__description">Пикантная пепперони, ветчина, маринованные огурчики, томаты, моцарелла, томатный соус</div>
+              </div>
+              </div>
+            </div>
+            <div class="group-item__settings">
+              <div class="control-buttons group-item__sizes">
+                <div class="control-buttons__wrapper-title">
+                  <div class="control-buttons__title">Размер</div>
+                  <div class="control-buttons__weight" id="weight-Домашняя">420г</div>
+                </div>
+                <div class="control-buttons__row">
+                  <div data-size="M" data-weight="420г" data-price="14.99$" id="Домашняя" class="base-tab-button selected">
+                    <button class="base-tab-button selected" onclick="changeValues(this)">M
+                    </button>
+                  </div>
+                  <div data-size="L" data-weight="630г" data-price="23.99$" id="Домашняя" class="base-tab-button"> 
+                    <button class="base-tab-button" onclick="changeValues(this)">L
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bottom-blocks">
+              <div class="group-item__bottom-block bottom">
+                <div class="group-item__price-contaier">
+                  <div class="group-item__price-text" id="price-Домашняя">14.99$</div>
+                </div>
+                <div class="add-product-block">
+                  <button class="red-button" onclick="addToCart('Домашняя', 14.99)">
+                    <div>В корзину</div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="group-item__item">
+            <div class="group-item__item__body">
+              <div class="product-column">
+                <div class="group-item__image-container">
+                  <div class="">
+                    <img loading="lazy" alt="Итальянская" class="medium" src="pictures/Итальянская.jpg">
+                  </div>
+                </div>
+                <div class="col-b">
+                  <div class="wrapper-title">
+                    <h2 class="group-item__name-product">Итальянская</h2>
+                  </div>
+                  <div class="group-item__description">Томатный соус, пикантная пепперони, маслины, шампиньоны, моцарелла, итальянские травы</div>
+              </div>
+              </div>
+            </div>
+            <div class="group-item__settings">
+              <div class="control-buttons group-item__sizes">
+                <div class="control-buttons__wrapper-title">
+                  <div class="control-buttons__title">Размер</div>
+                  <div class="control-buttons__weight" id="weight-Итальянская">370г</div>
+                </div>
+                <div class="control-buttons__row">
+                  <div data-size="M" data-weight="370г" data-price="18.99$"  id="Итальянская" class="base-tab-button selected">
+                    <button class="base-tab-button selected" onclick="changeValues(this)">M
+                    </button>
+                  </div>
+                  <div data-size="L" data-weight="544г" data-price="26.99$"  id="Итальянская" class="base-tab-button"> 
+                    <button class="base-tab-button" onclick="changeValues(this)">L
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bottom-blocks">
+              <div class="group-item__bottom-block bottom">
+                <div class="group-item__price-contaier">
+                  <div class="group-item__price-text" id="price-Итальянская">18.99$</div>
+                </div>
+                <div class="add-product-block">
+                  <button class="red-button" onclick="addToCart('Итальянская', 18.99)">
+                    <div>В корзину</div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+      </div>
+      <div class="group-item__grid">
+          <article class="group-item__item">
+            <div class="group-item__item__body">
+              <div class="product-column">
+                <div class="group-item__image-container">
+                  <div class="">
+                    <img loading="lazy" alt="Итальянский циплёнок" class="medium" src="pictures/Итальянский циплёнок.jpg">
+                  </div>
+                </div>
+                <div class="col-b">
+                  <div class="wrapper-title">
+                    <h2 class="group-item__name-product">Итальянский циплёнок</h2>
+                  </div>
+                  <div class="group-item__description">Цыпленок, итальянские травы, моцарелла, соус альфредо, красный лук, томаты</div>
+              </div>
+              </div>
+            </div>
+            <div class="group-item__settings">
+              <div class="control-buttons group-item__sizes">
+                <div class="control-buttons__wrapper-title">
+                  <div class="control-buttons__title">Размер</div>
+                  <div class="control-buttons__weight" id="weight-Итальянский циплёнок">435г</div>
+                </div>
+                <div class="control-buttons__row">
+                  <div data-size="M" data-weight="435г" data-price="12.99$"  id="Итальянский циплёнок" class="base-tab-button selected">
+                    <button class="base-tab-button selected" onclick="changeValues(this)">M
+                    </button>
+                  </div>
+                  <div data-size="L" data-weight="645г" data-price="20.99$"  id="Итальянский циплёнок" class="base-tab-button"> 
+                    <button class="base-tab-button" onclick="changeValues(this)">L
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bottom-blocks">
+              <div class="group-item__bottom-block bottom">
+                <div class="group-item__price-contaier">
+                  <div class="group-item__price-text" id="price-Итальянский циплёнок">12.99$</div>
+                </div>
+                <div class="add-product-block">
+                  <button class="red-button" onclick="addToCart('Итальянский циплёнок', 12.99)">
+                    <div>В корзину</div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="group-item__item">
+            <div class="group-item__item__body">
+              <div class="product-column">
+                <div class="group-item__image-container">
+                  <div class="">
+                    <img loading="lazy" alt="Мясная" class="medium" src="pictures/Мясная.jpg">
+                  </div>
+                </div>
+                <div class="col-b">
+                  <div class="wrapper-title">
+                    <h2 class="group-item__name-product">Мясная</h2>
+                  </div>
+                  <div class="group-item__description">Цыпленок, ветчина, пикантная пепперони, острые колбаски чоризо, моцарелла, томатный соус</div>
+              </div>
+              </div>
+            </div>
+            <div class="group-item__settings">
+              <div class="control-buttons group-item__sizes">
+                <div class="control-buttons__wrapper-title">
+                  <div class="control-buttons__title">Размер</div>
+                  <div class="control-buttons__weight" id="weight-Мясная">422г</div>
+                </div>
+                <div class="control-buttons__row">
+                  <div data-size="M" data-weight="422г" data-price="20.99$" id="Мясная" class="base-tab-button selected">
+                    <button class="base-tab-button selected" onclick="changeValues(this)">M
+                    </button>
+                  </div>
+                  <div data-size="L" data-weight="623г" data-price="29.99$" id="Мясная" class="base-tab-button"> 
+                    <button class="base-tab-button" onclick="changeValues(this)">L
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bottom-blocks">
+              <div class="group-item__bottom-block bottom">
+                <div class="group-item__price-contaier">
+                  <div class="group-item__price-text" id="price-Мясная">20.99$</div>
+                </div>
+                <div class="add-product-block">
+                  <button class="red-button" onclick="addToCart('Мясная', 20.99)">
+                    <div>В корзину</div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="group-item__item">
+            <div class="group-item__item__body">
+              <div class="product-column">
+                <div class="group-item__image-container">
+                  <div class="">
+                    <img loading="lazy" alt="Пепперони" class="medium" src="pictures/Пепперони.jpg">
+                  </div>
+                </div>
+                <div class="col-b">
+                  <div class="wrapper-title">
+                    <h2 class="group-item__name-product">Пепперони</h2>
+                  </div>
+                  <div class="group-item__description">Пикантная пепперони, мно-о-ого моцареллы и томатный соус. Самая популярная пицца</div>
+              </div>
+              </div>
+            </div>
+            <div class="group-item__settings">
+              <div class="control-buttons group-item__sizes">
+                <div class="control-buttons__wrapper-title">
+                  <div class="control-buttons__title">Размер</div>
+                  <div class="control-buttons__weight" id="weight-Пепперони">386г</div>
+                </div>
+                <div class="control-buttons__row">
+                  <div data-size="M" data-weight="386г" data-price="13.99$"  id="Пепперони" class="base-tab-button selected">
+                    <button class="base-tab-button selected" onclick="changeValues(this)">M
+                    </button>
+                  </div>
+                  <div data-size="L" data-weight="551г" data-price="23.99$"  id="Пепперони" class="base-tab-button"> 
+                    <button class="base-tab-button" onclick="changeValues(this)">L
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bottom-blocks">
+              <div class="group-item__bottom-block bottom">
+                <div class="group-item__price-contaier">
+                  <div class="group-item__price-text" id="price-Пепперони">13.99$</div>
+                </div>
+                <div class="add-product-block">
+                  <button class="red-button" onclick="addToCart('Пепперони', 13.99)">
+                    <div>В корзину</div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+      </div>
+      <div class="group-item__grid">
+          <article class="group-item__item">
+            <div class="group-item__item__body">
+              <div class="product-column">
+                <div class="group-item__image-container">
+                  <div class="">
+                    <img loading="lazy" alt="Сырная" class="medium" src="pictures/Сырная.jpg">
+                  </div>
+                </div>
+                <div class="col-b">
+                  <div class="wrapper-title">
+                    <h2 class="group-item__name-product">Сырная</h2>
+                  </div>
+                  <div class="group-item__description">Увеличенная порция моцареллы, сыры чеддер и пармезан, соус альфредо</div>
+              </div>
+              </div>
+            </div>
+            <div class="group-item__settings">
+              <div class="control-buttons group-item__sizes">
+                <div class="control-buttons__wrapper-title">
+                  <div class="control-buttons__title">Размер</div>
+                  <div class="control-buttons__weight" id="weight-Сырная">347г</div>
+                </div>
+                <div class="control-buttons__row">
+                  <div data-size="M" data-weight="347г" data-price="7.99$"  id="Сырная" class="base-tab-button selected">
+                    <button class="base-tab-button selected" onclick="changeValues(this)">M
+                    </button>
+                  </div>
+                  <div data-size="L" data-weight="645г" data-price="20.99$"  id="Сырная" class="base-tab-button"> 
+                    <button class="base-tab-button" onclick="changeValues(this)">L
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bottom-blocks">
+              <div class="group-item__bottom-block bottom">
+                <div class="group-item__price-contaier">
+                  <div class="group-item__price-text" id="price-Сырная">7.99$</div>
+                </div>
+                <div class="add-product-block">
+                  <button class="red-button" onclick="addToCart('Сырная', 7.99)">
+                    <div>В корзину</div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="group-item__item">
+            <div class="group-item__item__body">
+              <div class="product-column">
+                <div class="group-item__image-container">
+                  <div class="">
+                    <img loading="lazy" alt="Сырный цепленок" class="medium" src="pictures/Сырный цепленок.jpg">
+                  </div>
+                </div>
+                <div class="col-b">
+                  <div class="wrapper-title">
+                    <h2 class="group-item__name-product">Сырный цепленок</h2>
+                  </div>
+                  <div class="group-item__description">Цыпленок, моцарелла, сыры чеддер и пармезан, сырный соус, томаты, соус альфредо, сухой чеснок</div>
+              </div>
+              </div>
+            </div>
+            <div class="group-item__settings">
+              <div class="control-buttons group-item__sizes">
+                <div class="control-buttons__wrapper-title">
+                  <div class="control-buttons__title">Размер</div>
+                  <div class="control-buttons__weight" id="weight-Сырный цепленок">422г</div>
+                </div>
+                <div class="control-buttons__row">
+                  <div data-size="M" data-weight="451г" data-price="20.99$" id="Сырный цепленок" class="base-tab-button selected">
+                    <button class="base-tab-button selected" onclick="changeValues(this)">M
+                    </button>
+                  </div>
+                  <div data-size="L" data-weight="695г" data-price="29.99$" id="Сырный цепленок" class="base-tab-button"> 
+                    <button class="base-tab-button" onclick="changeValues(this)">L
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bottom-blocks">
+              <div class="group-item__bottom-block bottom">
+                <div class="group-item__price-contaier">
+                  <div class="group-item__price-text" id="price-Сырный цепленок">20.99$</div>
+                </div>
+                <div class="add-product-block">
+                  <button class="red-button" onclick="addToCart('Сырный цепленок', 20.99)">
+                    <div>В корзину</div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="group-item__item">
+            <div class="group-item__item__body">
+              <div class="product-column">
+                <div class="group-item__image-container">
+                  <div class="">
+                    <img loading="lazy" alt="Четыре сезона" class="medium" src="pictures/Четыре сезона.jpg">
+                  </div>
+                </div>
+                <div class="col-b">
+                  <div class="wrapper-title">
+                    <h2 class="group-item__name-product">Четыре сезона</h2>
+                  </div>
+                  <div class="group-item__description">Томатный соус, пикантная пепперони, ветчина, кубики брынзы, томаты, шампиньоны, моцарелла, итальянские травы</div>
+              </div>
+              </div>
+            </div>
+            <div class="group-item__settings">
+              <div class="control-buttons group-item__sizes">
+                <div class="control-buttons__wrapper-title">
+                  <div class="control-buttons__title">Размер</div>
+                  <div class="control-buttons__weight" id="weight-Четыре сезона">439г</div>
+                </div>
+                <div class="control-buttons__row">
+                  <div data-size="M" data-weight="439г" data-price="18.99$"  id="Четыре сезона" class="base-tab-button selected">
+                    <button class="base-tab-button selected" onclick="changeValues(this)">M
+                    </button>
+                  </div>
+                  <div data-size="L" data-weight="654г" data-price="26.99$"  id="Четыре сезона" class="base-tab-button"> 
+                    <button class="base-tab-button" onclick="changeValues(this)">L
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bottom-blocks">
+              <div class="group-item__bottom-block bottom">
+                <div class="group-item__price-contaier">
+                  <div class="group-item__price-text" id="price-Четыре сезона">18.99$</div>
+                </div>
+                <div class="add-product-block">
+                  <button class="red-button" onclick="addToCart('Четыре сезона', 18.99)">
+                    <div>В корзину</div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+      </div>
+  </section>
+    <!----------------------------------------------------------------------------------->
+    <section class="group-item" >
+      <div class="group-item__title-block">
+        <h1 id="Desserts">Десерты</h1>
+      </div>
+      <div class="group-item__grid">
+        <article class="group-item__item">
+          <div class="group-item__item__body">
+            <div class="product-column">
+              <div class="group-item__image-container">
+                <div class="">
+                  <img loading="lazy" alt="Слоеные палочки с ананасами и брусникой" class="medium" src="pictures/Слоеные палочки с ананасами и брусникой.jpg">
+                </div>
+              </div>
+              <div class="col-b">
+                <div class="wrapper-title">
+                  <h2 class="group-item__name-product">Слоеные палочки с ананасами и брусникой</h2>
+                </div>
+                <div class="group-item__description"></div>
+            </div>
+            </div>
+          </div>
+          <div class="group-item__settings">
+            <div class="control-buttons group-item__sizes">
+              <div class="control-buttons__wrapper-title">
+                <div class="control-buttons__title">Размер</div>
+                <div class="control-buttons__weight" id="weight-Слоеные палочки с ананасами и брусникой">250г</div>
+              </div>
+              <div class="control-buttons__row">
+                <div data-size="0.45л" data-weight="250г" data-price="9.99$"  id="Слоеные палочки с ананасами и брусникой" class="base-tab-button selected">
+                  <button class="base-tab-button selected" onclick="changeValues(this)">Стандарт
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bottom-blocks">
+            <div class="group-item__bottom-block bottom">
+              <div class="group-item__price-contaier">
+                <div class="group-item__price-text" id="price-Слоеные палочки с ананасами и брусникой">9.99$</div>
+              </div>
+              <div class="add-product-block">
+                <button class="red-button" onclick="addToCart('Слоеные палочки с ананасами и брусникой', 9.99)">
+                  <div>В корзину</div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="group-item__item">
+          <div class="group-item__item__body">
+            <div class="product-column">
+              <div class="group-item__image-container">
+                <div class="">
+                  <img loading="lazy" alt="Рулетики с корицей" class="medium" src="pictures/Рулетики с корицей.jpg">
+                </div>
+              </div>
+              <div class="col-b">
+                <div class="wrapper-title">
+                  <h2 class="group-item__name-product">Рулетики с корицей</h2>
+                </div>
+                <div class="group-item__description">Десерт, одобренный нашими бабушками. Горячие сладкие рулетики с пряной корицей и сахаром</div>
+            </div>
+            </div>
+          </div>
+          <div class="group-item__settings">
+            <div class="control-buttons group-item__sizes">
+              <div class="control-buttons__wrapper-title">
+                <div class="control-buttons__title">Размер</div>
+                <div class="control-buttons__weight" id="weight-Рулетики с корицей">220г</div>
+              </div>
+              <div class="control-buttons__row">
+                <div data-size="0.45л" data-weight="220г" data-price="2.43$"  id="Рулетики с корицей" class="base-tab-button selected">
+                  <button class="base-tab-button selected" onclick="changeValues(this)">Стандарт
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bottom-blocks">
+            <div class="group-item__bottom-block bottom">
+              <div class="group-item__price-contaier">
+                <div class="group-item__price-text" id="price-Рулетики с корицей">2.43$</div>
+              </div>
+              <div class="add-product-block">
+                <button class="red-button" onclick="addToCart('Рулетики с корицей', 2.43)">
+                  <div>В корзину</div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="group-item__item">
+          <div class="group-item__item__body">
+            <div class="product-column">
+              <div class="group-item__image-container">
+                <div class="">
+                  <img loading="lazy" alt="Мороженое ТОП Клубника-красная смородина" class="medium" src="pictures/Мороженое ТОП Клубника-красная смородина.jpg">
+                </div>
+              </div>
+              <div class="col-b">
+                <div class="wrapper-title">
+                  <h2 class="group-item__name-product">Мороженое ТОП Клубника-красная смородина</h2>
+                </div>
+                <div class="group-item__description">Нежное сливочное мороженое, политое топпингом из клубники и красной смородины, дозированное "розой" в прозрачном пластиковом стакане с крышкой</div>
+            </div>
+            </div>
+          </div>
+          <div class="group-item__settings">
+            <div class="control-buttons group-item__sizes">
+              <div class="control-buttons__wrapper-title">
+                <div class="control-buttons__title">Размер</div>
+                <div class="control-buttons__weight" id="weight-Мороженое ТОП Клубника-красная смородина">220г</div>
+              </div>
+              <div class="control-buttons__row">
+                <div data-size="0.45л" data-weight="220г" data-price="4.50$"  id="Мороженое ТОП Клубника-красная смородина" class="base-tab-button selected">
+                  <button class="base-tab-button selected" onclick="changeValues(this)">Стандарт
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bottom-blocks">
+            <div class="group-item__bottom-block bottom">
+              <div class="group-item__price-contaier">
+                <div class="group-item__price-text" id="price-Мороженое ТОП Клубника-красная смородина">4.50$</div>
+              </div>
+              <div class="add-product-block">
+                <button class="red-button" onclick="addToCart('Мороженое ТОП Клубника-красная смородина', 4.50)">
+                  <div>В корзину</div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="group-item__grid">
+        <article class="group-item__item">
+          <div class="group-item__item__body">
+            <div class="product-column">
+              <div class="group-item__image-container">
+                <div class="">
+                  <img loading="lazy" alt="Мороженое ТОП Соленая карамель-арахис" class="medium" src="pictures/Мороженое ТОП Соленая карамель-арахис.jpg">
+                </div>
+              </div>
+              <div class="col-b">
+                <div class="wrapper-title">
+                  <h2 class="group-item__name-product">Мороженое ТОП Соленая карамель-арахис</h2>
+                </div>
+                <div class="group-item__description">Сливочное мороженое со вкусом карамели с карамельным топпингом и арахисом</div>
+            </div>
+            </div>
+          </div>
+          <div class="group-item__settings">
+            <div class="control-buttons group-item__sizes">
+              <div class="control-buttons__wrapper-title">
+                <div class="control-buttons__title">Размер</div>
+                <div class="control-buttons__weight" id="weight-Мороженое ТОП Соленая карамель-арахис">220г</div>
+              </div>
+              <div class="control-buttons__row">
+                <div data-size="0.45л" data-weight="220г" data-price="4.50$"  id="Мороженое ТОП Соленая карамель-арахис" class="base-tab-button selected">
+                  <button class="base-tab-button selected" onclick="changeValues(this)">Стандартй
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bottom-blocks">
+            <div class="group-item__bottom-block bottom">
+              <div class="group-item__price-contaier">
+                <div class="group-item__price-text" id="price-Мороженое ТОП Соленая карамель-арахис">4.50$</div>
+              </div>
+              <div class="add-product-block">
+                <button class="red-button" onclick="addToCart('Мороженое ТОП Соленая карамель-арахис', 4.50)">
+                  <div>В корзину</div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="group-item__item">
+          <div class="group-item__item__body">
+            <div class="product-column">
+              <div class="group-item__image-container">
+                <div class="">
+                  <img loading="lazy" alt="Мороженое Юкки Пломбир на сливках" class="medium" src="pictures/Мороженое Юкки Пломбир на сливках.jpg">
+                </div>
+              </div>
+              <div class="col-b">
+                <div class="wrapper-title">
+                  <h2 class="group-item__name-product">Мороженое Юкки Пломбир на сливках</h2>
+                </div>
+                <div class="group-item__description">Классический пломбир, приготовленный на свежих сливках</div>
+            </div>
+            </div>
+          </div>
+          <div class="group-item__settings">
+            <div class="control-buttons group-item__sizes">
+              <div class="control-buttons__wrapper-title">
+                <div class="control-buttons__title">Размер</div>
+                <div class="control-buttons__weight" id="weight-Мороженое Юкки Пломбир на сливках">220г</div>
+              </div>
+              <div class="control-buttons__row">
+                <div data-size="0.45л" data-weight="220г" data-price="4.32$"  id="Мороженое Юкки Пломбир на сливках" class="base-tab-button selected">
+                  <button class="base-tab-button selected" onclick="changeValues(this)">Стандарт
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bottom-blocks">
+            <div class="group-item__bottom-block bottom">
+              <div class="group-item__price-contaier">
+                <div class="group-item__price-text" id="price-Мороженое Юкки Пломбир на сливках">4.32$</div>
+              </div>
+              <div class="add-product-block">
+                <button class="red-button" onclick="addToCart('Мороженое Юкки Пломбир на сливках', 4.32)">
+                  <div>В корзину</div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="group-item__item">
+          <div class="group-item__item__body">
+            <div class="product-column">
+              <div class="group-item__image-container">
+                <div class="">
+                  <img loading="lazy" alt="Сырники" class="medium" src="pictures/Сырники.jpg">
+                </div>
+              </div>
+              <div class="col-b">
+                <div class="wrapper-title">
+                  <h2 class="group-item__name-product">Сырники</h2>
+                </div>
+                <div class="group-item__description">Любимый десерт многих наших гостей — румяные сырники из печи. Такие нежные, в меру сладкие и напоминающие детство</div>
+            </div>
+            </div>
+          </div>
+          <div class="group-item__settings">
+            <div class="control-buttons group-item__sizes">
+              <div class="control-buttons__wrapper-title">
+                <div class="control-buttons__title">Размер</div>
+                <div class="control-buttons__weight" id="weight-Сырники">230г</div>
+              </div>
+              <div class="control-buttons__row">
+                <div data-size="0.45л" data-weight="230г" data-price="11.99$"  id="Сырники" class="base-tab-button selected">
+                  <button class="base-tab-button selected" onclick="changeValues(this)">Стандарт
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bottom-blocks">
+            <div class="group-item__bottom-block bottom">
+              <div class="group-item__price-contaier">
+                <div class="group-item__price-text" id="price-Сырники">11.99$</div>
+              </div>
+              <div class="add-product-block">
+                <button class="red-button" onclick="addToCart('Сырники', 11.99)">
+                  <div>В корзину</div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+
+    <!----------------------------------------------------------------------------------->
+    <section class="group-item" >
+      <div class="group-item__title-block">
+        <h1 id="Drink">Напитки</h1>
+      </div>
+      <div class="group-item__grid">
+          <article class="group-item__item">
+            <div class="group-item__item__body">
+              <div class="product-column">
+                <div class="group-item__image-container">
+                  <div class="">
+                    <img loading="lazy" alt="Морс Вишня" class="medium" src="pictures/Морс Вишня.jpg">
+                  </div>
+                </div>
+                <div class="col-b">
+                  <div class="wrapper-title">
+                    <h2 class="group-item__name-product">Морс Вишня</h2>
+                  </div>
+                  <div class="group-item__description">Напиток со вкусом ностальгии — летние каникулы, теплые ночи и уютные дачные посиделки. А еще никаких косточек. Дизайн товара может отличаться</div>
+              </div>
+              </div>
+            </div>
+            <div class="group-item__settings">
+              <div class="control-buttons group-item__sizes">
+                <div class="control-buttons__wrapper-title">
+                  <div class="control-buttons__title">Размер</div>
+                  <div class="control-buttons__weight" id="weight-Морс Вишня">450г</div>
+                </div>
+                <div class="control-buttons__row">
+                  <div data-size="0.45л" data-weight="450г" data-price="2.83$"  id="Морс Вишня" class="base-tab-button selected">
+                    <button class="base-tab-button selected" onclick="changeValues(this)">0.45л
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bottom-blocks">
+              <div class="group-item__bottom-block bottom">
+                <div class="group-item__price-contaier">
+                  <div class="group-item__price-text" id="price-Морс Вишня">2.83$</div>
+                </div>
+                <div class="add-product-block">
+                  <button class="red-button" onclick="addToCart('Морс Вишня', 2.83)">
+                    <div>В корзину</div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="group-item__item">
+            <div class="group-item__item__body">
+              <div class="product-column">
+                <div class="group-item__image-container">
+                  <div class="">
+                    <img loading="lazy" alt="Морс клюква" class="medium" src="pictures/Морс клюква.jpg">
+                  </div>
+                </div>
+                <div class="col-b">
+                  <div class="wrapper-title">
+                    <h2 class="group-item__name-product">Морс клюква</h2>
+                  </div>
+                  <div class="group-item__description">Эта ягода хитра! Наш фирменный морс для любителей сладкой кислинки. Дизайн товара может отличаться</div>
+              </div>
+              </div>
+            </div>
+            <div class="group-item__settings">
+              <div class="control-buttons group-item__sizes">
+                <div class="control-buttons__wrapper-title">
+                  <div class="control-buttons__title">Размер</div>
+                  <div class="control-buttons__weight" id="weight-Морс клюква">450г</div>
+                </div>
+                <div class="control-buttons__row">
+                  <div data-size="0.45л" data-weight="450г" data-price="3.10$"  id="Морс клюква" class="base-tab-button selected">
+                    <button class="base-tab-button selected" onclick="changeValues(this)">0.45л
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bottom-blocks">
+              <div class="group-item__bottom-block bottom">
+                <div class="group-item__price-contaier">
+                  <div class="group-item__price-text" id="price-Морс клюква">3.10$</div>
+                </div>
+                <div class="add-product-block">
+                  <button class="red-button" onclick="addToCart('Морс клюква', 3.10)">
+                    <div>В корзину</div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="group-item__item">
+            <div class="group-item__item__body">
+              <div class="product-column">
+                <div class="group-item__image-container">
+                  <div class="">
+                    <img loading="lazy" alt="Морс Черная смородина" class="medium" src="pictures/Морс Черная смородина.jpg">
+                  </div>
+                </div>
+                <div class="col-b">
+                  <div class="wrapper-title">
+                    <h2 class="group-item__name-product">Морс Черная смородина</h2>
+                  </div>
+                  <div class="group-item__description">Для усиления ощущений от морса рекомендуем закрыть глаза и представить себя у бабушки в саду. Дизайн товара может отличаться</div>
+              </div>
+              </div>
+            </div>
+            <div class="group-item__settings">
+              <div class="control-buttons group-item__sizes">
+                <div class="control-buttons__wrapper-title">
+                  <div class="control-buttons__title">Размер</div>
+                  <div class="control-buttons__weight" id="weight-Морс Черная смородина">450г</div>
+                </div>
+                <div class="control-buttons__row">
+                  <div data-size="0.45л" data-weight="450г" data-price="3.53$"  id="Морс Черная смородина" class="base-tab-button selected">
+                    <button class="base-tab-button selected" onclick="changeValues(this)">0.45л
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bottom-blocks">
+              <div class="group-item__bottom-block bottom">
+                <div class="group-item__price-contaier">
+                  <div class="group-item__price-text" id="price-Морс Черная смородина">3.53$</div>
+                </div>
+                <div class="add-product-block">
+                  <button class="red-button" onclick="addToCart('Морс Черная смородина', 3.53)">
+                    <div>В корзину</div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      <div class="group-item__grid">
+        <article class="group-item__item">
+          <div class="group-item__item__body">
+            <div class="product-column">
+              <div class="group-item__image-container">
+                <div class="">
+                  <img loading="lazy" alt="Чай Lipton черный с лимоном" class="medium" src="pictures/Чай Lipton черный с лимоном.jpg">
+                </div>
+              </div>
+              <div class="col-b">
+                <div class="wrapper-title">
+                  <h2 class="group-item__name-product">Чай Lipton черный с лимоном</h2>
+                </div>
+                <div class="group-item__description"></div>
+            </div>
+            </div>
+          </div>
+          <div class="group-item__settings">
+            <div class="control-buttons group-item__sizes">
+              <div class="control-buttons__wrapper-title">
+                <div class="control-buttons__title">Размер</div>
+                <div class="control-buttons__weight" id="weight-Чай Lipton черный с лимоном">450г</div>
+              </div>
+              <div class="control-buttons__row">
+                <div data-size="0.45л" data-weight="450г" data-price="1.79$"  id="Чай Lipton черный с лимоном" class="base-tab-button selected">
+                  <button class="base-tab-button selected" onclick="changeValues(this)">0.45л
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bottom-blocks">
+            <div class="group-item__bottom-block bottom">
+              <div class="group-item__price-contaier">
+                <div class="group-item__price-text" id="price-Чай Lipton черный с лимоном">1.79$</div>
+              </div>
+              <div class="add-product-block">
+                <button class="red-button" onclick="addToCart('Чай Lipton черный с лимоном', 1.79)">
+                  <div>В корзину</div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="group-item__item">
+          <div class="group-item__item__body">
+            <div class="product-column">
+              <div class="group-item__image-container">
+                <div class="">
+                  <img loading="lazy" alt="Квас Хлебный" class="medium" src="pictures/Квас Хлебный.jpg">
+                </div>
+              </div>
+              <div class="col-b">
+                <div class="wrapper-title">
+                  <h2 class="group-item__name-product">Квас Хлебный</h2>
+                </div>
+                <div class="group-item__description"></div>
+            </div>
+            </div>
+          </div>
+          <div class="group-item__settings">
+            <div class="control-buttons group-item__sizes">
+              <div class="control-buttons__wrapper-title">
+                <div class="control-buttons__title">Размер</div>
+                <div class="control-buttons__weight" id="weight-Квас Хлебный">500г</div>
+              </div>
+              <div class="control-buttons__row">
+                <div data-size="0.45л" data-weight="500г" data-price="2.43$"  id="Квас Хлебный" class="base-tab-button selected">
+                  <button class="base-tab-button selected" onclick="changeValues(this)">0.5л
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bottom-blocks">
+            <div class="group-item__bottom-block bottom">
+              <div class="group-item__price-contaier">
+                <div class="group-item__price-text" id="price-Квас Хлебный">2.43$</div>
+              </div>
+              <div class="add-product-block">
+                <button class="red-button" onclick="addToCart('Квас Хлебный', 2.43)">
+                  <div>В корзину</div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="group-item__item">
+          <div class="group-item__item__body">
+            <div class="product-column">
+              <div class="group-item__image-container">
+                <div class="">
+                  <img loading="lazy" alt="Квас Темный" class="medium" src="pictures/Квас Темный.jpg">
+                </div>
+              </div>
+              <div class="col-b">
+                <div class="wrapper-title">
+                  <h2 class="group-item__name-product">Квас Темный</h2>
+                </div>
+                <div class="group-item__description"></div>
+            </div>
+            </div>
+          </div>
+          <div class="group-item__settings">
+            <div class="control-buttons group-item__sizes">
+              <div class="control-buttons__wrapper-title">
+                <div class="control-buttons__title">Размер</div>
+                <div class="control-buttons__weight" id="weight-Квас Темный">500г</div>
+              </div>
+              <div class="control-buttons__row">
+                <div data-size="0.45л" data-weight="500г" data-price="4.43$"  id="Квас Темный" class="base-tab-button selected">
+                  <button class="base-tab-button selected" onclick="changeValues(this)">0.5л
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bottom-blocks">
+            <div class="group-item__bottom-block bottom">
+              <div class="group-item__price-contaier">
+                <div class="group-item__price-text" id="price-Квас Темный">4.43$</div>
+              </div>
+              <div class="add-product-block">
+                <button class="red-button" onclick="addToCart('Квас Темный', 4.43)">
+                  <div>В корзину</div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    
+    <!----------------------------------------------------------------------------------->
+    <section class="group-item" >
+      <div class="group-item__title-block">
+        <h1 id="Desserts">Соусы</h1>
+      </div>
+      <div class="group-item__grid">
+        <article class="group-item__item">
+          <div class="group-item__item__body">
+            <div class="product-column">
+              <div class="group-item__image-container">
+                <div class="">
+                  <img loading="lazy" alt="Чесночный Соус" class="medium" src="pictures/Чесночный Соус.jpg">
+                </div>
+              </div>
+              <div class="col-b">
+                <div class="wrapper-title">
+                  <h2 class="group-item__name-product">Чесночный Соус</h2>
+                </div>
+                <div class="group-item__description">Соус с чесночным вкусом для бортиков пиццы и горячих закусок, 25 г</div>
+            </div>
+            </div>
+          </div>
+          <div class="group-item__settings">
+            <div class="control-buttons group-item__sizes">
+              <div class="control-buttons__wrapper-title">
+                <div class="control-buttons__title">Размер</div>
+                <div class="control-buttons__weight" id="weight-Чесночный Соус">25г</div>
+              </div>
+              <div class="control-buttons__row">
+                <div data-size="Стандарт" data-weight="25г" data-price="1.19$"  id="Чесночный Соус" class="base-tab-button selected">
+                  <button class="base-tab-button selected" onclick="changeValues(this)">Стандарт
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bottom-blocks">
+            <div class="group-item__bottom-block bottom">
+              <div class="group-item__price-contaier">
+                <div class="group-item__price-text" id="price-Чесночный Соус">1.19$</div>
+              </div>
+              <div class="add-product-block">
+                <button class="red-button" onclick="addToCart('Чесночный Соус', 1.19)">
+                  <div>В корзину</div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="group-item__item">
+          <div class="group-item__item__body">
+            <div class="product-column">
+              <div class="group-item__image-container">
+                <div class="">
+                  <img loading="lazy" alt="Сырный Соус" class="medium" src="pictures/Сырный Соус.jpg">
+                </div>
+              </div>
+              <div class="col-b">
+                <div class="wrapper-title">
+                  <h2 class="group-item__name-product">Сырный Соус</h2>
+                </div>
+                <div class="group-item__description">Нежный соус со вкусом расплавленного сыра для бортиков пиццы и горячих закусок, 25 г</div>
+            </div>
+            </div>
+          </div>
+          <div class="group-item__settings">
+            <div class="control-buttons group-item__sizes">
+              <div class="control-buttons__wrapper-title">
+                <div class="control-buttons__title">Размер</div>
+                <div class="control-buttons__weight" id="weight-Сырный Соус">25г</div>
+              </div>
+              <div class="control-buttons__row">
+                <div data-size="Стандарт" data-weight="25г" data-price="1.19$"  id="Сырный Соус" class="base-tab-button selected">
+                  <button class="base-tab-button selected" onclick="changeValues(this)">Стандарт
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bottom-blocks">
+            <div class="group-item__bottom-block bottom">
+              <div class="group-item__price-contaier">
+                <div class="group-item__price-text" id="price-Сырный Соус">1.19$</div>
+              </div>
+              <div class="add-product-block">
+                <button class="red-button" onclick="addToCart('Сырный Соус', 1.19)">
+                  <div>В корзину</div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="group-item__item">
+          <div class="group-item__item__body">
+            <div class="product-column">
+              <div class="group-item__image-container">
+                <div class="">
+                  <img loading="lazy" alt="Кисло-сладкий соус" class="medium" src="pictures/Кисло-сладкий соус.jpg">
+                </div>
+              </div>
+              <div class="col-b">
+                <div class="wrapper-title">
+                  <h2 class="group-item__name-product">Кисло-сладкий соус</h2>
+                </div>
+                <div class="group-item__description">Соус кисло-сладкий для бортиков пиццы и горячих закусок, 25 г</div>
+            </div>
+            </div>
+          </div>
+          <div class="group-item__settings">
+            <div class="control-buttons group-item__sizes">
+              <div class="control-buttons__wrapper-title">
+                <div class="control-buttons__title">Размер</div>
+                <div class="control-buttons__weight" id="weight-Кисло-сладкий соус">25г</div>
+              </div>
+              <div class="control-buttons__row">
+                <div data-size="Стандарт" data-weight="25г" data-price="1.19$"  id="Кисло-сладкий соус" class="base-tab-button selected">
+                  <button class="base-tab-button selected" onclick="changeValues(this)">Стандарт
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bottom-blocks">
+            <div class="group-item__bottom-block bottom">
+              <div class="group-item__price-contaier">
+                <div class="group-item__price-text" id="price-Кисло-сладкий соус">1.19$</div>
+              </div>
+              <div class="add-product-block">
+                <button class="red-button" onclick="addToCart('Кисло-сладкий соус', 1.19)">
+                  <div>В корзину</div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+
+    <div class="cart">
+      <h2>Корзина</h2>
+      <div id="cart-items"></div>
+      <div>Итоговая цена: <span id="total-price">0$</span></div>
+    </div>
+
+<button onclick="openModal()">Оформить заказ</button>
+
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <label for="fname">Имя:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <label for="lname">Фамилия:</label>
+    <input type="text" id="lname" name="lname"><br><br>
+    <label for="address">Адрес:</label>
+    <input type="text" id="address" name="address"><br><br>
+    <button onclick="submitOrder()">Отправить</button>
+  </div>
+</div>
+
+
+    <footer id="footer" class="page-footer">
+      <div class="header-of-footer page-footer__inner page-footer__wrapper">
+        <div class="page-footer__justify-between">
+          <a href="Index.html">
+            <img src="pictures/Лого.jpg" width="100px" higth="100px">
+          </a>
+          <div class="header-of-footer__language-selector-mobile">
+            <div class="language-selector">
+              <div class="lang-items-list-rel"></div>
+            </div>
+          </div>
+        </div>
+      </div>      
+      <div class="page-footer__separator"></div>
+      <div class="page-footer__inner body-of-footer">
+        <div class="body-of-footer__dp-nav body-of-footer__flex-wrap">
+          <ul class="body-of-footer__column-nav">
+            <li class="body-of-footer__column-nav-item">
+              <a href="О нас.html">О нас</a>
+            </li>
+            <li class="body-of-footer__column-nav-item">
+              <a href="">Pizza Беларусь</a>
+            </li>
+          </ul>
+          <ul class="body-of-footer__column-nav">
+            <li class="body-of-footer__column-nav-item">
+              <a href="">Пиццерии</a>
+            </li>
+            <li class="body-of-footer__column-nav-item">
+              <a href="">Карта доставки</a>
+            </li>
+            <li class="body-of-footer__column-nav-item">
+              <a href="">Условия доставки</a>
+            </li>
+          </ul>
+          <ul class="body-of-footer__column-nav">
+            <li class="body-of-footer__column-nav-item">
+              <a href="">Новости</a>
+            </li>
+            <li class="body-of-footer__column-nav-item">
+              <a href="">Акции</a>
+            </li>
+            <li class="body-of-footer__column-nav-item">
+              <a href="">Программа лояльности</a>
+            </li>
+          </ul>
+          <ul class="body-of-footer__column-nav">
+            <li class="body-of-footer__column-nav-item">
+              <a href="">Отзыв</a>
+            </li>
+            <li class="body-of-footer__column-nav-item">
+              <a href="">Контактные данные</a>
+            </li>
+            <li class="body-of-footer__column-nav-item">
+              <a href="">Арендодателям</a>
+            </li>
+            <li class="body-of-footer__column-nav-item">
+              <a href="">Поставщикам</a>
+            </li>
+          </ul>
+          <div class="body-of-footer__contacts">
+            <div class="body-of-footer__contacts-title">Контактные данные</div>
+            <ul class="body-of-footer__contact-link-list">
+              <li>
+              <a class="" href="mailto:info@PIZZA.by">info@PIZZA.by</a>
+              </li>
+              <li>
+                <a class="body-of-footer__phone-link" href="tel:7717">
+                  <div class="icon footer-col__link-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M23.2969 16.9688L18.0469 14.7188C17.9062 14.6719 17.7656 14.625 17.5781 14.625C17.25 14.625 16.9219 14.8125 16.7344 15.0469L14.3906 17.9062C10.7344 16.1719 7.82812 13.2656 6.09375 9.60938L8.95312 7.26562C9.1875 7.07812 9.375 6.75 9.375 6.375C9.375 6.23438 9.32812 6.09375 9.28125 5.95312L7.03125 0.703125C6.84375 0.28125 6.42188 0 5.95312 0C5.90625 0 5.8125 0.046875 5.71875 0.046875L0.84375 1.17188C0.328125 1.3125 0 1.73438 0 2.25C0 14.2969 9.70312 24 21.75 24C22.2656 24 22.6875 23.6719 22.8281 23.1562L23.9531 18.2812C23.9531 18.1875 23.9531 18.0938 23.9531 18.0469C23.9531 17.5781 23.6719 17.1562 23.2969 16.9688Z"></path>
+                    </svg>
+                  </div>7717
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="page-footer__wrapper body-of-footer__info-social-block">
+          <div>
+            <p class="body-of-footer__warning">Внешний вид продукта может отличаться от рекламного изображения.</p>
+          </div>
+          <ul class="body-of-footer__social-icons-list">
+            <li>
+              <a href="https://www.facebook.com/" target="_blank" rel="nofollow noreferrer">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g>
+                    <path d="M31.5 16C31.5 7.4375 24.5625 0.5 16 0.5C7.4375 0.5 0.5 7.4375 0.5 16C0.5 23.7362 6.16813 30.1488 13.5781 31.3125V20.4806H9.64062V16H13.5781V12.585C13.5781 8.70062 15.8906 6.555 19.4325 6.555C21.1287 6.555 22.9025 6.8575 22.9025 6.8575V10.67H20.9475C19.0225 10.67 18.4219 11.865 18.4219 13.0906V16H22.7206L22.0331 20.4806H18.4219V31.3125C25.8319 30.1488 31.5 23.7362 31.5 16Z"></path>
+                  </g>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/" target="_blank" rel="nofollow noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 169.063 169.063" opacity="0.3">
+                  <path d="M122.406,0H46.654C20.929,0,0,20.93,0,46.655v75.752c0,25.726,20.929,46.655,46.654,46.655h75.752 c25.727,0,46.656-20.93,46.656-46.655V46.655C169.063,20.93,148.133,0,122.406,0z M154.063,122.407 c0,17.455-14.201,31.655-31.656,31.655H46.654C29.2,154.063,15,139.862,15,122.407V46.655C15,29.201,29.2,15,46.654,15h75.752 c17.455,0,31.656,14.201,31.656,31.655V122.407z"></path><path d="M84.531,40.97c-24.021,0-43.563,19.542-43.563,43.563c0,24.02,19.542,43.561,43.563,43.561s43.563-19.541,43.563-43.561 C128.094,60.512,108.552,40.97,84.531,40.97z M84.531,113.093c-15.749,0-28.563-12.812-28.563-28.561 c0-15.75,12.813-28.563,28.563-28.563s28.563,12.813,28.563,28.563C113.094,100.281,100.28,113.093,84.531,113.093z"></path>
+                  <path d="M129.921,28.251c-2.89,0-5.729,1.17-7.77,3.22c-2.051,2.04-3.23,4.88-3.23,7.78c0,2.891,1.18,5.73,3.23,7.78 c2.04,2.04,4.88,3.22,7.77,3.22c2.9,0,5.73-1.18,7.78-3.22c2.05-2.05,3.22-4.89,3.22-7.78c0-2.9-1.17-5.74-3.22-7.78 C135.661,29.421,132.821,28.251,129.921,28.251z"></path>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.tiktok.com/" target="_blank" rel="nofollow noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none" opacity="0.3">
+                  <path d="M16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32ZM17.0757 13.0369C17.0771 9.8518 17.1123 7.11542 17.154 6.95622C17.2268 6.67864 17.2861 6.66667 18.5893 6.66667H19.9486L20.0338 7.21361C20.3166 9.02739 21.7174 10.4642 23.464 10.7319L24 10.814V13.4873L23.5278 13.4852C22.7711 13.4816 21.4383 13.1484 20.7453 12.7895C20.3932 12.6071 20.0749 12.4578 20.0378 12.4578C20.0009 12.4578 19.9703 13.7463 19.9697 15.3212C19.9683 19.5955 19.649 20.8516 18.1846 22.3432C15.09 25.4948 10.3484 23.937 9.44485 19.4718C8.80419 16.3056 10.9894 13.4027 14.3194 12.9961L15.1859 12.8905V15.7787L14.2731 16.0603C12.6068 16.5743 12.0381 17.1968 12.0381 18.5063C12.0381 20.8198 14.6944 22.0025 16.2711 20.391C17.0647 19.58 17.073 19.504 17.0757 13.0369Z" fill="white"></path>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="page-footer__separator"></div>
+      <div class="page-footer__inner page-footer__wrapper bottom-footer">
+        <ul class="bottom-footer__payment-list">
+          <li>
+            <img loading="lazy" class="bottom-footer__image" src="https://static.dominos.by/web/img/payment_methods/oplati.png" alt="">
+          </li>
+          <li>
+            <img loading="lazy" class="bottom-footer__image" src="https://static.dominos.by/web/img/payment_methods/belcart.png" alt="">
+          </li>
+          <li>
+            <img loading="lazy" class="bottom-footer__image" src="https://static.dominos.by/web/img/payment_methods/mir.png" alt="">
+          </li>
+          <li>
+            <img loading="lazy" class="bottom-footer__image" src="https://static.dominos.by/web/img/payment_methods/belcart_internetpass.png" alt="">
+          </li>
+          <li>
+            <img loading="lazy" class="bottom-footer__image" src="https://static.dominos.by/web/img/payment_methods/webpay.png" alt="">
+          </li>
+          <li>
+            <img loading="lazy" class="bottom-footer__image" src="https://static.dominos.by/web/img/payment_methods/mastercard-securecode.png" alt="">
+          </li>
+          <li>
+            <img loading="lazy" class="bottom-footer__image" src="https://static.dominos.by/web/img/payment_methods/mastercard.png" alt="">
+          </li>
+          <li>
+            <img loading="lazy" class="bottom-footer__image" src="https://static.dominos.by/web/img/payment_methods/visa.png" alt="">
+          </li>
+        </ul>
+      </div>        
+    </footer>     
+</body>
+</html>
