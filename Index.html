@@ -84,6 +84,21 @@
       </div>
     </div>
   </div>
+  <div class="slider-container">
+    <div class="slider">
+      <div class="slide">
+        <img src="pictures/Домашняя.jpg" alt="Slide 1">
+      </div>
+      <div class="slide">
+        <img src="pictures/Мороженое ТОП Клубника-красная смородина.jpg" alt="Slide 2">
+      </div>
+      <div class="slide">
+        <img src="pictures/Морс вишня.jpg" alt="Slide 3">
+      </div>
+    </div>
+    <button class="prev-btn" onclick="prevSlide()">&#10094;</button>
+    <button class="next-btn" onclick="nextSlide()">&#10095;</button>
+  </div>
   <section class="group-item" >
       <div class="group-item__title-block">
         <h1 id="Pizza">Пицца</h1>
@@ -1482,26 +1497,30 @@
     </section>
 
 
-    <div class="cart">
+    <div id="cart-container">
       <h2>Корзина</h2>
-      <div id="cart-items"></div>
-      <div>Итоговая цена: <span id="total-price">0$</span></div>
-    </div>
-
-<button onclick="openModal()">Оформить заказ</button>
-
-<div id="myModal" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal()">&times;</span>
-    <label for="fname">Имя:</label>
-    <input type="text" id="fname" name="fname"><br><br>
-    <label for="lname">Фамилия:</label>
-    <input type="text" id="lname" name="lname"><br><br>
-    <label for="address">Адрес:</label>
-    <input type="text" id="address" name="address"><br><br>
-    <button onclick="submitOrder()">Отправить</button>
+      <ul id="cart-items"></ul>
+      <div id="total-price"></div>
+      <button id="checkout-button">Оформить заказ</button>
   </div>
-</div>
+
+  <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Информация о заказе</h2>
+            <form id="order-form">
+                <label for="firstName">Имя:</label>
+                <input type="text" id="firstName" name="firstName" required>
+                <label for="lastName">Фамилия:</label>
+                <input type="text" id="lastName" name="lastName" required>
+                <label for="phone">Номер телефона:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <label for="address">Адрес:</label>
+                <input type="text" id="address" name="address" required>
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </div>
 
 
     <footer id="footer" class="page-footer">
