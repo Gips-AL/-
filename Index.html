@@ -128,11 +128,11 @@
                 </div>
                 <div class="control-buttons__row">
                   <div data-size="M" data-weight="440г" data-price="20.99$"  id="Баварская" class="base-tab-button selected">
-                    <button class="base-tab-button selected" onclick="changeValues(this)">M
+                    <button class="base-tab-button selected" onclick="changeValues(this)" data-size="M">M
                     </button>
                   </div>
                   <div data-size="L" data-weight="630г" data-price="29.99$"  id="Баварская" class="base-tab-button"> 
-                    <button class="base-tab-button" onclick="changeValues(this)">L
+                    <button class="base-tab-button" onclick="changeValues(this)" data-size="L">L
                     </button>
                   </div>
                 </div>
@@ -222,11 +222,11 @@
                 </div>
                 <div class="control-buttons__row">
                   <div data-size="M" data-weight="420г" data-price="18.99$"  id="Бургер-пицца" class="base-tab-button selected">
-                    <button class="base-tab-button selected" onclick="changeValues(this)">M
+                    <button class="base-tab-button selected" onclick="changeValues(this)" data-size="M">M
                     </button>
                   </div>
                   <div data-size="L" data-weight="630г" data-price="26.99$"  id="Бургер-пицца" class="base-tab-button"> 
-                    <button class="base-tab-button" onclick="changeValues(this)">L
+                    <button class="base-tab-button" onclick="changeValues(this)" data-size="L">L
                     </button>
                   </div>
                 </div>
@@ -1361,7 +1361,7 @@
     <!----------------------------------------------------------------------------------->
     <section class="group-item" >
       <div class="group-item__title-block">
-        <h1 id="Desserts">Соусы</h1>
+        <h1 id="Sauces">Соусы</h1>
       </div>
       <div class="group-item__grid">
         <article class="group-item__item">
@@ -1500,27 +1500,27 @@
     <div id="cart-container">
       <h2>Корзина</h2>
       <ul id="cart-items"></ul>
-      <div id="total-price"></div>
+      <div id="total-price">Итоговая цена: 0$</div>
       <button id="checkout-button">Оформить заказ</button>
   </div>
 
   <div id="modal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Информация о заказе</h2>
-            <form id="order-form">
-                <label for="firstName">Имя:</label>
-                <input type="text" id="firstName" name="firstName" required>
-                <label for="lastName">Фамилия:</label>
-                <input type="text" id="lastName" name="lastName" required>
-                <label for="phone">Номер телефона:</label>
-                <input type="tel" id="phone" name="phone" required>
-                <label for="address">Адрес:</label>
-                <input type="text" id="address" name="address" required>
-                <button type="submit">Отправить</button>
-            </form>
-        </div>
-    </div>
+      <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Информация о заказе</h2>
+          <form id="order-form">
+              <label for="firstName">Имя:</label>
+              <input type="text" id="firstName" name="firstName" required>
+              <label for="lastName">Фамилия:</label>
+              <input type="text" id="lastName" name="lastName" required>
+              <label for="phone">Номер телефона:</label>
+              <input type="tel" id="phone" name="phone" required>
+              <label for="address">Адрес:</label>
+              <input type="text" id="address" name="address" required>
+              <button type="submit">Отправить</button>
+          </form>
+      </div>
+  </div>
 
 
     <footer id="footer" class="page-footer">
